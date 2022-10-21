@@ -3,11 +3,17 @@ package com.crowdar.examples.constants;
 public class CalculatorConstants {
     private CalculatorConstants() {}
 	// NUMBERS
-    public static final String SEVEN = "XPATH://*[@AutomationId='num7Button']";
-    public static final String EIGHT = "XPATH://*[@AutomationId='num8Button']";
-    
+    public static final String NUMBER = "XPATH://*[@AutomationId='num%sButton']";
+
     //OPERATIONS
     public static final String PLUS = "XPATH://*[@AutomationId='plusButton']";
+
+    public static final String DIVIDE = "XPATH://*[@AutomationId='divideButton']";
+
+    public static final String MULTIPLY = "XPATH://*[@AutomationId='multiplyButton']";
+
+    public static final String MINUS = "XPATH://*[@AutomationId='minusButton']";
+
     public static final String EQUAL = "XPATH://*[@AutomationId='equalButton']";
     
     //DISPLAY
