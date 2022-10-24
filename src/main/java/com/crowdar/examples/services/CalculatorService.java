@@ -13,6 +13,18 @@ public class CalculatorService {
     	ActionManager.click(CalculatorConstants.PLUS);
     }
 
+    public static void minus() {
+        ActionManager.click(CalculatorConstants.MINUS);
+    }
+
+    public static void multiply() {
+        ActionManager.click(CalculatorConstants.MULTIPLY);
+    }
+
+    public static void divide() {
+        ActionManager.click(CalculatorConstants.DIVIDE);
+    }
+
     public static void inputNumber(String number) {
         for (int i = 0; i < number.length(); i++) {
             String digit;
@@ -26,8 +38,6 @@ public class CalculatorService {
     }
     
     public static String getResult() {
-		return ActionManager.getText(CalculatorConstants.CALCULATOR_RESULTS).replaceAll("\\D+", "").trim();
+		return ActionManager.getText(CalculatorConstants.RESULT).replaceAll("\\D+", "").trim();
     }
-
-
 }
